@@ -1,0 +1,89 @@
+:root {
+  --primary: #5a2d82;
+  --primary-light: #7a42a1;
+  --secondary: #f9f7fc;
+  --accent: rgb(255, 111, 97);
+  --text-color: #333;
+  --text-light: #666;
+  --bg-gradient: linear-gradient(180deg, #fdfdfd 0%, #f7f4fa 100%);
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', 'Inter', sans-serif;
+  color: var(--text-color);
+  min-height: 100vh;
+}
+
+body {
+  background: linear-gradient(180deg, #fdfdfd 0%, #f7f4fa 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: cover;       
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  margin-top: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+  transition: 0.3s;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+header {
+  background: var(--primary);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header nav {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+header nav a {
+  color: white;
+  font-weight: 500;
+  position: relative;
+}
+
+header nav a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--accent);
+}
+
+header nav a:hover {
+  color: var(--accent);
+}
+
+footer {
+  background: var(--primary);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}

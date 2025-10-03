@@ -1,0 +1,15 @@
+{
+    "name": "repair-service",
+    "version": "1.0.0",
+    "scripts": {
+        "dev": "concurrently \"cd server && node server.js\" \"cd client && npm run dev\""
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    },
+    "dependencies": {
+        "lucide-react": "^0.544.0",
+        "mongoose": "^8.16.5",
+        "react-icons": "^5.5.0"
+    }
+}
