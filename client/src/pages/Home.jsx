@@ -34,7 +34,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Популярные услуги */}
+
       <h2 className="home-section-title">Популярные услуги</h2>
       <div className="home-services">
         <div className="service-card">
